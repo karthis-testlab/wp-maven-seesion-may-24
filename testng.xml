@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test1">
+    <classes>
+      <class name="wp.week07.session1.TestNGHooks">
+      <methods>
+      <include name="test1"/>
+      <exclude name="test2"/>
+      </methods>
+      </class>
+    </classes>
+  </test> <!-- Test1 -->
+  <test thread-count="5" name="Test2">
+    <classes>
+      <class name="wp.week07.session1.TestNGHooks">
+      <methods>
+      <exclude name="test1"/>
+      <include name="test2"/>
+      </methods>
+      </class>
+    </classes>
+  </test> <!-- Test2 -->
+</suite> <!-- Suite -->
