@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<listeners>
+		<listener class-name="wp.week08.session1.RetryListener"></listener>
+	</listeners>
+	<test thread-count="5" name="Test">
+		<parameter name="url" value="https://www.saucedemo.com/"></parameter>
+		<parameter name="uName" value="standard_user"></parameter>
+		<parameter name="password" value="secret_sauce"></parameter>
+		<classes>
+			<class name="wp.week08.session1.SauceDemoTest" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
