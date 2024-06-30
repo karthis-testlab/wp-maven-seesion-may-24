@@ -3,6 +3,22 @@
   <groupId>org.wp.maven.session.may.24</groupId>
   <artifactId>wp-maven-seesion-may-24</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+	<!-- Define the version of Allure you want to use via the allure.version property -->
+	<properties>
+		<allure.version>2.24.0</allure.version>
+	</properties>
+	<!-- Add allure-bom to dependency management to ensure correct versions of all the dependencies are used -->
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>io.qameta.allure</groupId>
+				<artifactId>allure-bom</artifactId>
+				<version>${allure.version}</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
 	<dependencies>
 		<!-- selenium-java-v4.21.0 -->
 		<dependency>
@@ -22,6 +38,23 @@
 			<groupId>commons-io</groupId>
 			<artifactId>commons-io</artifactId>
 			<version>2.16.1</version>
+		</dependency>
+		<!-- poi-ooxml-v5.2.3 -->
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi-ooxml</artifactId>
+			<version>5.2.3</version>
+		</dependency>
+		<!-- poi-v5.2.3 -->
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi</artifactId>
+			<version>5.2.3</version>
+		</dependency>
+		<!-- allure-testngv2.24.0 -->
+		<dependency>
+			<groupId>io.qameta.allure</groupId>
+			<artifactId>allure-testng</artifactId>
 		</dependency>
 	</dependencies>
 </project>
