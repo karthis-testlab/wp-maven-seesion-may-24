@@ -41,24 +41,49 @@ public class SortingTest {
 		dropdown.selectByVisibleText("Price (low to high)");
 		String actual = driver.findElement(By.className("inventory_item_price")).getText();
 		String expected = "$"+prices.get(0);
-		System.out.println("Actual: "+actual);
-		System.out.println("Expected: "+expected);
 		Assert.assertEquals(actual, expected);
 	}
 	
 	@Test
-	public void testProductNameDisplayedAsAtoZ() {
+	public void testHighestPriceShouldDisplayFirst() {
+		List<Double> prices = new ArrayList<Double>();
+		List<WebElement> elements = driver.findElements(By.className("inventory_item_price"));
+		for (WebElement element : elements) {
+			prices.add(Double.valueOf(element.getText().replaceAll("\\$", "")));		
+		}		
+		Collections.sort(prices, Collections.reverseOrder());
 		Select dropdown = new Select(driver.findElement(By.className("product_sort_container")));
-		dropdown.selectByVisibleText("Price (low to high)");
+		dropdown.selectByVisibleText("Price (high to low)");
+		String actual = driver.findElement(By.className("inventory_item_price")).getText();
+		String expected = "$"+prices.get(0);
+		Assert.assertEquals(actual, expected);
+	}
+	
+	@Test
+	public void testProductNameDisplayedAsAtoZ() {		
 		List<String> productName = new ArrayList<String>();
 		List<WebElement> elements = driver.findElements(By.className("inventory_item_name"));
 		for (WebElement element : elements) {
 			productName.add(element.getText());		
-		}		
-		System.out.println(productName);
-		Collections.sort(productName, Collections.reverseOrder());
-		System.out.println(productName);
+		}
+		Collections.sort(productName);		
+		String actual = driver.findElement(By.className("inventory_item_name")).getText();
+		Assert.assertEquals(actual, productName.get(0));
 	}
+	
+	@Test
+	public void testProductNameDisplayedAsZtoA() {		
+		List<String> productName = new ArrayList<String>();
+		List<WebElement> elements = driver.findElements(By.className("inventory_item_name"));
+		for (WebElement element : elements) {
+			productName.add(element.getText());		
+		}
+		Collections.sort(productName, Collections.reverseOrder());
+		Select dropdown = new Select(driver.findElement(By.className("product_sort_container")));
+		dropdown.selectByVisibleText("Name (Z to A)");
+		String actual = driver.findElement(By.className("inventory_item_name")).getText();
+		Assert.assertEquals(actual, productName.get(0));
+	}	
 	
 	@AfterMethod
 	public void tearDown() {
