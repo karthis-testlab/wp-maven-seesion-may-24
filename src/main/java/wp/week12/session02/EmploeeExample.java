@@ -1,4 +1,4 @@
-package wp.week12.session2;
+package wp.week12.session02;
 
 import wp.week12.session01.Employees;
 

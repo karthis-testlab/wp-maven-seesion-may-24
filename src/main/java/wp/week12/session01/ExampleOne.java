@@ -1,7 +1,7 @@
 package wp.week12.session01;
 
-import wp.week12.session2.AccessModifierExample;
-import wp.week12.session2.Main;
+import wp.week12.session02.AccessModifierExample;
+import wp.week12.session02.Main;
 
 public class ExampleOne extends AccessModifierExample{
 
