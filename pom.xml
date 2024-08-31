@@ -56,5 +56,17 @@
 			<groupId>io.qameta.allure</groupId>
 			<artifactId>allure-testng</artifactId>
 		</dependency>
+		<!-- cucumber-java-v7.18.1 -->
+		<dependency>
+			<groupId>io.cucumber</groupId>
+			<artifactId>cucumber-java</artifactId>
+			<version>7.18.1</version>
+		</dependency>
+		<!-- cucumber-testng-v7.18.1 -->
+		<dependency>
+			<groupId>io.cucumber</groupId>
+			<artifactId>cucumber-testng</artifactId>
+			<version>7.18.1</version>
+		</dependency>
 	</dependencies>
 </project>
