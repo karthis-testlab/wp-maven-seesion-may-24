@@ -7,7 +7,7 @@ import io.cucumber.testng.CucumberOptions;
 		          features = "src/main/java/wp/week14/session1/features/checkout.feature",
 		          glue = "wp.week14.session1.step.definitions",
 		          dryRun = false,
-		          plugin = { "pretty", "html:reports/result.html"}
+		          plugin = { "pretty", "html:reports/result.html", "json:report.json"}
 		         )
 
 public class CheckoutPageTest extends AbstractTestNGCucumberTests {
