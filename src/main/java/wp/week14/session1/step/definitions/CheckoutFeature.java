@@ -5,8 +5,6 @@ import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.Assert;
 import org.testng.asserts.SoftAssert;
 
@@ -15,18 +13,12 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
-public class CheckoutFeature {
+public class CheckoutFeature extends BaseClass {	
 	
-	
-	private ChromeDriver driver;
-	private String productName;
+	private String productName;	
 	
 	@Given("saucelab demo registered user entered the login page")
-	public void saucelab_demo_registered_user_entered_the_login_page() {
-		ChromeOptions options = new ChromeOptions();
-		options.addArguments("--disable-search-engine-choice-screen");
-		driver = new ChromeDriver(options);
-		driver.manage().window().maximize();
+	public void saucelab_demo_registered_user_entered_the_login_page() {		
 		driver.get("https://www.saucedemo.com/");
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
 	}
@@ -90,8 +82,7 @@ public class CheckoutFeature {
 
 	@Then("validate the information displayed in the checout area")
 	public void validate_the_information_displayed_in_the_checout_area() {
-		Assert.assertEquals(driver.findElement(By.cssSelector("div.inventory_item_name")).getText(), productName);
-		driver.quit();
+		Assert.assertEquals(driver.findElement(By.cssSelector("div.inventory_item_name")).getText(), productName);		
 	}
 
 }
