@@ -56,17 +56,22 @@
 			<groupId>io.qameta.allure</groupId>
 			<artifactId>allure-testng</artifactId>
 		</dependency>
-		<!-- cucumber-java-v7.18.1 -->
+		<!-- cucumber-java-v6.11.0 -->
 		<dependency>
 			<groupId>io.cucumber</groupId>
 			<artifactId>cucumber-java</artifactId>
-			<version>7.18.1</version>
+			<version>6.11.0</version>
 		</dependency>
-		<!-- cucumber-testng-v7.18.1 -->
+		<!-- cucumber-testng-v6.11.0 -->
 		<dependency>
 			<groupId>io.cucumber</groupId>
 			<artifactId>cucumber-testng</artifactId>
-			<version>7.18.1</version>
+			<version>6.11.0</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/io.qameta.allure/allure-cucumber6-jvm -->
+		<dependency>
+			<groupId>io.qameta.allure</groupId>
+			<artifactId>allure-cucumber6-jvm</artifactId>
 		</dependency>
 	</dependencies>
 </project>

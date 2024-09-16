@@ -1,0 +1,5 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","4","setUpClass","Default suite","Sat Sep 14 14:57:52 CEST 2024","broken","Sat Sep 14 14:57:52 CEST 2024","wp.week14.session1.test.runner.CheckoutPageTest","Default test","wp.week14.session1.test.runner.CheckoutPageTest","setUpClass"
+"","12255","Validate the data added in the checout page based on the given product selection","","Sat Sep 14 15:47:44 CEST 2024","passed","Sat Sep 14 15:47:57 CEST 2024","","Checkout Page Data","Validate the data added in the checout page based on the given product selection",""
+"","12891","Validate the data added in the checout page","","Sat Sep 14 15:47:44 CEST 2024","passed","Sat Sep 14 15:47:57 CEST 2024","","Checkout Page Data","Validate the data added in the checout page",""
+"","12456","Validate the data added in the checout page based on the given product selection","","Sat Sep 14 15:47:44 CEST 2024","passed","Sat Sep 14 15:47:57 CEST 2024","","Checkout Page Data","Validate the data added in the checout page based on the given product selection",""

@@ -1,1 +1,550 @@
-[{"line":1,"elements":[{"line":3,"name":"Saucelab demo site lauch and login flow","description":"","type":"background","keyword":"Background","steps":[{"result":{"duration":672605500,"status":"passed"},"line":4,"name":"saucelab demo registered user entered the login page","match":{"location":"wp.week14.session1.step.definitions.CheckoutFeature.saucelab_demo_registered_user_entered_the_login_page()"},"keyword":"Given "},{"result":{"duration":351069100,"status":"passed"},"line":5,"name":"the user enters the valid username \"standard_user\" and \"secret_sauce\" password","match":{"arguments":[{"val":"\"standard_user\"","offset":35},{"val":"\"secret_sauce\"","offset":55}],"location":"wp.week14.session1.step.definitions.CheckoutFeature.the_user_enters_the_valid_username_and_password(java.lang.String,java.lang.String)"},"keyword":"And "},{"result":{"duration":178649200,"status":"passed"},"line":6,"name":"the user clicks on the login button","match":{"location":"wp.week14.session1.step.definitions.CheckoutFeature.the_user_clicks_on_the_login_button()"},"keyword":"And "}]},{"start_timestamp":"2024-09-08T14:04:45.449Z","before":[{"result":{"duration":2988263300,"status":"passed"},"match":{"location":"wp.week14.session1.step.definitions.Hooks.beforeScenario()"}}],"line":9,"name":"Validate the data added in the checout page","description":"","id":"checkout-page-data;validate-the-data-added-in-the-checout-page","after":[{"result":{"duration":241155800,"status":"passed"},"match":{"location":"wp.week14.session1.step.definitions.Hooks.afterSCenario(io.cucumber.java.Scenario)"}}],"type":"scenario","keyword":"Scenario","steps":[{"result":{"duration":177883400,"status":"passed"},"line":10,"name":"user select the first product in the inventory page","match":{"location":"wp.week14.session1.step.definitions.CheckoutFeature.user_select_the_first_product_in_the_inventory_page()"},"keyword":"Given "},{"result":{"duration":145642100,"status":"passed"},"line":11,"name":"user goto add cart page and confirm the product name","match":{"location":"wp.week14.session1.step.definitions.CheckoutFeature.user_goto_add_cart_page_and_confirm_the_product_name()"},"keyword":"And "},{"result":{"duration":161841900,"status":"passed"},"line":12,"name":"the user clicks on the checout page","match":{"location":"wp.week14.session1.step.definitions.CheckoutFeature.the_user_clicks_on_the_checout_page()"},"keyword":"When "},{"result":{"duration":315934500,"status":"passed"},"line":13,"name":"the user enters their personal information","match":{"location":"wp.week14.session1.step.definitions.CheckoutFeature.the_user_enters_their_personal_information(io.cucumber.datatable.DataTable)"},"rows":[{"cells":["John","King","45782"]}],"keyword":"And "},{"result":{"duration":96095500,"status":"passed"},"line":15,"name":"click on the contiue button","match":{"location":"wp.week14.session1.step.definitions.CheckoutFeature.click_on_the_contiue_button()"},"keyword":"And "},{"result":{"duration":25462000,"status":"passed"},"line":16,"name":"validate the information displayed in the checout area","match":{"location":"wp.week14.session1.step.definitions.CheckoutFeature.validate_the_information_displayed_in_the_checout_area()"},"keyword":"Then "}],"tags":[{"name":"@smoke"},{"name":"@regression"}]}],"name":"Checkout Page Data","description":"","id":"checkout-page-data","keyword":"Feature","uri":"file:src/main/java/wp/week14/session1/features/checkout.feature","tags":[]}]
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "Saucelab demo site lauch and login flow",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 6177683800,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "saucelab demo registered user entered the login page",
+            "match": {
+              "location": "wp.week14.session1.step.definitions.CheckoutFeature.saucelab_demo_registered_user_entered_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 543548500,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the user enters the valid username \"standard_user\" and \"secret_sauce\" password",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"standard_user\"",
+                  "offset": 35
+                },
+                {
+                  "val": "\"secret_sauce\"",
+                  "offset": 55
+                }
+              ],
+              "location": "wp.week14.session1.step.definitions.CheckoutFeature.the_user_enters_the_valid_username_and_password(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 204987400,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the user clicks on the login button",
+            "match": {
+              "location": "wp.week14.session1.step.definitions.CheckoutFeature.the_user_clicks_on_the_login_button()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-09-14T13:47:44.834Z",
+        "before": [
+          {
+            "result": {
+              "duration": 4206727700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "wp.week14.session1.step.definitions.Hooks.beforeScenario()"
+            }
+          }
+        ],
+        "line": 9,
+        "name": "Validate the data added in the checout page",
+        "description": "",
+        "id": "checkout-page-data;validate-the-data-added-in-the-checout-page",
+        "after": [
+          {
+            "result": {
+              "duration": 365024400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "wp.week14.session1.step.definitions.Hooks.afterSCenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 275904000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user select the first product in the inventory page",
+            "match": {
+              "location": "wp.week14.session1.step.definitions.CheckoutFeature.user_select_the_first_product_in_the_inventory_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 139783800,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user goto add cart page and confirm the product name",
+            "match": {
+              "location": "wp.week14.session1.step.definitions.CheckoutFeature.user_goto_add_cart_page_and_confirm_the_product_name()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 181936700,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "the user clicks on the checout page",
+            "match": {
+              "location": "wp.week14.session1.step.definitions.CheckoutFeature.the_user_clicks_on_the_checout_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 428336600,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "the user enters their personal information",
+            "match": {
+              "location": "wp.week14.session1.step.definitions.CheckoutFeature.the_user_enters_their_personal_information(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "John",
+                  "King",
+                  "45782"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 125570800,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "click on the contiue button",
+            "match": {
+              "location": "wp.week14.session1.step.definitions.CheckoutFeature.click_on_the_contiue_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 57427400,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "validate the information displayed in the checout area",
+            "match": {
+              "location": "wp.week14.session1.step.definitions.CheckoutFeature.validate_the_information_displayed_in_the_checout_area()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke"
+          },
+          {
+            "name": "@regression"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "Saucelab demo site lauch and login flow",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1133896600,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "saucelab demo registered user entered the login page",
+            "match": {
+              "location": "wp.week14.session1.step.definitions.CheckoutFeature.saucelab_demo_registered_user_entered_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 572728800,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the user enters the valid username \"standard_user\" and \"secret_sauce\" password",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"standard_user\"",
+                  "offset": 35
+                },
+                {
+                  "val": "\"secret_sauce\"",
+                  "offset": 55
+                }
+              ],
+              "location": "wp.week14.session1.step.definitions.CheckoutFeature.the_user_enters_the_valid_username_and_password(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 215051300,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the user clicks on the login button",
+            "match": {
+              "location": "wp.week14.session1.step.definitions.CheckoutFeature.the_user_clicks_on_the_login_button()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-09-14T13:47:44.832Z",
+        "before": [
+          {
+            "result": {
+              "duration": 6479848600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "wp.week14.session1.step.definitions.Hooks.beforeScenario()"
+            }
+          }
+        ],
+        "line": 30,
+        "name": "Validate the data added in the checout page based on the given product selection",
+        "description": "",
+        "id": "checkout-page-data;validate-the-data-added-in-the-checout-page-based-on-the-given-product-selection;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 2061621700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "wp.week14.session1.step.definitions.Hooks.afterSCenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 366815600,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "the user selects given Sauce Labs Bike Light product name from inventory list",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Sauce Labs Bike Light",
+                  "offset": 23
+                }
+              ],
+              "location": "wp.week14.session1.step.definitions.CheckoutFeature.the_user_selects_given_sauce_labs_bike_light_product_name_from_inventory_list(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 154142500,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "user goto add cart page and confirm the product name",
+            "match": {
+              "location": "wp.week14.session1.step.definitions.CheckoutFeature.user_goto_add_cart_page_and_confirm_the_product_name()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 189872900,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "the user clicks on the checout page",
+            "match": {
+              "location": "wp.week14.session1.step.definitions.CheckoutFeature.the_user_clicks_on_the_checout_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 526904200,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "the user enters their personal information",
+            "match": {
+              "location": "wp.week14.session1.step.definitions.CheckoutFeature.the_user_enters_their_personal_information(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "John",
+                  "King",
+                  "45782"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 428977300,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "click on the contiue button",
+            "match": {
+              "location": "wp.week14.session1.step.definitions.CheckoutFeature.click_on_the_contiue_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 98915100,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "validate the information displayed in the checout area",
+            "match": {
+              "location": "wp.week14.session1.step.definitions.CheckoutFeature.validate_the_information_displayed_in_the_checout_area()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "Saucelab demo site lauch and login flow",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1701010400,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "saucelab demo registered user entered the login page",
+            "match": {
+              "location": "wp.week14.session1.step.definitions.CheckoutFeature.saucelab_demo_registered_user_entered_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 527014000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the user enters the valid username \"standard_user\" and \"secret_sauce\" password",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"standard_user\"",
+                  "offset": 35
+                },
+                {
+                  "val": "\"secret_sauce\"",
+                  "offset": 55
+                }
+              ],
+              "location": "wp.week14.session1.step.definitions.CheckoutFeature.the_user_enters_the_valid_username_and_password(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 781891900,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the user clicks on the login button",
+            "match": {
+              "location": "wp.week14.session1.step.definitions.CheckoutFeature.the_user_clicks_on_the_login_button()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-09-14T13:47:44.835Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3825716400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "wp.week14.session1.step.definitions.Hooks.beforeScenario()"
+            }
+          }
+        ],
+        "line": 31,
+        "name": "Validate the data added in the checout page based on the given product selection",
+        "description": "",
+        "id": "checkout-page-data;validate-the-data-added-in-the-checout-page-based-on-the-given-product-selection;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 2762963600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "wp.week14.session1.step.definitions.Hooks.afterSCenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 872946200,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "the user selects given Sauce Labs Fleece Jacket product name from inventory list",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Sauce Labs Fleece Jacket",
+                  "offset": 23
+                }
+              ],
+              "location": "wp.week14.session1.step.definitions.CheckoutFeature.the_user_selects_given_sauce_labs_bike_light_product_name_from_inventory_list(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 255363800,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "user goto add cart page and confirm the product name",
+            "match": {
+              "location": "wp.week14.session1.step.definitions.CheckoutFeature.user_goto_add_cart_page_and_confirm_the_product_name()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 391091800,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "the user clicks on the checout page",
+            "match": {
+              "location": "wp.week14.session1.step.definitions.CheckoutFeature.the_user_clicks_on_the_checout_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 870966600,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "the user enters their personal information",
+            "match": {
+              "location": "wp.week14.session1.step.definitions.CheckoutFeature.the_user_enters_their_personal_information(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "John",
+                  "King",
+                  "45782"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 162688800,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "click on the contiue button",
+            "match": {
+              "location": "wp.week14.session1.step.definitions.CheckoutFeature.click_on_the_contiue_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 78262600,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "validate the information displayed in the checout area",
+            "match": {
+              "location": "wp.week14.session1.step.definitions.CheckoutFeature.validate_the_information_displayed_in_the_checout_area()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression"
+          }
+        ]
+      }
+    ],
+    "name": "Checkout Page Data",
+    "description": "",
+    "id": "checkout-page-data",
+    "keyword": "Feature",
+    "uri": "file:src/main/java/wp/week14/session1/features/checkout.feature",
+    "tags": []
+  }
+]
