@@ -13,9 +13,9 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class Opportunity {
+public class OpportunityTest {
 	
-	//@Test
+	@Test
 	public void userShouldAbleToCreateOpportuniy() {
 		
 		ChromeOptions options = new ChromeOptions();
@@ -68,7 +68,7 @@ public class Opportunity {
 		driver.executeScript("arguments[0].click();", driver.findElement(By.xpath("//a[@title='Opportunities']/span")));
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@name='Opportunity-search-input']")));
 		driver.findElement(By.xpath("//input[@name='Opportunity-search-input']")).sendKeys("Salesforce Automation By Kartihkeyan", Keys.ENTER);
-		Thread.sleep(3000);
+		wait.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath("//div[@data-aura-class='forceListViewManagerPrimaryDisplayManager']//div[@role='status' and contains(@class, 'slds-spinner')]")));
 		driver.executeScript("arguments[0].click();", driver.findElement(By.xpath("//table/tbody/tr[1]/td[8]/span/div/a")));
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.linkText("Edit"))).click();
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//label[text()='Stage']/following-sibling::div/lightning-base-combobox"))).click();
